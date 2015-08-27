@@ -11,5 +11,12 @@
 @implementation FISCar
 
 //code goes here
+-(instancetype)initWithWeight:(CGFloat)weight
+                     topSpeed:(CGFloat)topSpeed
+                 currentSpeed:(CGFloat)currentSpeed
+             currentDirection:(CGFloat)currentDirection{
+    self = [super initWithWeight:1270 topSpeed:88 currentSpeed:0 currentDirection:0];
+    return self;
+};
 
 @end

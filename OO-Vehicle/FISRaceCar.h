@@ -11,5 +11,14 @@
 @interface FISRaceCar : FISVehicle
 
 //code goes here
+@property (strong, nonatomic) NSArray *sponsors;
+
+-(instancetype) initWithWeight:(CGFloat)weight
+                      topSpeed:(CGFloat)topSpeed
+                  currentSpeed:(CGFloat)currentSpeed
+              currentDirection:(CGFloat)currentDirection
+                      sponsors:(NSArray *)sponsors;
+
+-(instancetype) init;
 
 @end
