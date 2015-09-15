@@ -10,6 +10,14 @@
 
 @interface FISPlane : FISVehicle
 
-//code goes here
+@property (nonatomic) NSUInteger currentAltitude;
+
+@property (nonatomic) NSUInteger topAltitude;
+
+- (instancetype)init;
+
+-(void)increaseAltitude;
+
+-(void)decreaseAltitude;
 
 @end
